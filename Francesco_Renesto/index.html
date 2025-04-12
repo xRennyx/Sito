@@ -1,83 +1,85 @@
-<!DOCTYPE html>
-<html lang="it">
+<!-- ! + tab per la generazione automatica della struttura di base-->
+<!-- alt + shift + f per identare -->
+<!DOCTYPE html> 
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Musica nel Mondo</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background: #222;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      background: #444;
-      padding: 1rem 0;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      padding: 2rem;
-      display: none;
-    }
-    section.active {
-      display: block;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #222;
-      color: white;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primaProva</title>
+    <style>
+        body{
+            background-image: url("https://m.media-amazon.com/images/I/91XyT1EvRkL._UF1000,1000_QL80_.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
 </head>
+
 <body>
-  <header>
-    <h1>Musica nel Mondo</h1>
-    <p>Scopri la musica in Italia, America e il fenomeno K-pop</p>
-  </header>
-
-  <nav>
-    <a href="#" onclick="showSection('italia')">Italia</a>
-    <a href="#" onclick="showSection('america')">America</a>
-    <a href="#" onclick="showSection('kpop')">K-pop</a>
-  </nav>
-
-  <section id="italia" class="active">
-    <h2>Musica Italiana</h2>
-  </section>
-
-  <section id="america">
-    <h2>Musica Americana</h2>
-  </section>
-
-  <section id="kpop">
-    <h2>K-pop</h2>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Musica nel Mondo</p>
-  </footer>
-
-  <script>
-    function showSection(id) {
-      const sections = document.querySelectorAll('section');
-      sections.forEach(section => section.classList.remove('active'));
-      document.getElementById(id).classList.add('active');
-    }
-  </script>
+    <p style="text-align: center;">Buongiorno</p>
+    <h1 style="background-color: aquamarine;"><strong>ciao</strong></h1>   <!--più grande-->
+    <h2><strong>ciao </strong></h2>
+    <h3><b>ciao</b></h3>
+    <h4>ciao</h4>
+    <h5>ciao</h5>
+    <h6>ciao</h6>   <!--più piccolo-->
+    <div>questo è un container</div>
+    <img src= "/cane.webp" alt="cane">    <!--webp formato immagine consigliato-->
+    <br>    <!--serve per creare spazio-->
+    <br>
+    <br>
+    <br>
+    <img src="https://www.cazampa.it/app/uploads/2024/10/cucciolo-cane-1200x800.png" alt="cane">
+    <br>
+    <br>
+    <br>
+    
+    <ul>
+        <li>Enrico</li>
+        <li>Fabio</li>
+        <li>Marcello</li>
+    </ul>
+    <ol>
+        <li>Enrico</li>
+        <li>Fabio</li>
+        <li>Marcello</li>
+    </ol>
+    <table>
+        <tr>
+            <th>nome</th>
+            <th>cognome</th>
+            <th>classe</th>
+        </tr>
+        <tr>
+            <th>Enrico</th>
+            <th>Prearo</th>
+            <th>4F</th>
+        </tr>
+        <tr>
+            <th>Marcello</th>
+            <th>Targa</th>
+            <th>4F</th>
+        </tr>
+        <tr>
+            <th>Matteo</th>
+            <th>Beccari</th>
+            <th>5F</th>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <form>
+        <label for="fname">Nome:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Cognome:</label><br>
+        <input type="text" id="lname" name="lname">
+        <br>
+        <input type="submit" value="Invia">
+      </form>
+    <iframe src="/cane.webp" title="description"></iframe>
+    <br>
+    <a href="https://iisviolamarchesini.edu.it/">Sito Scuola</a>
 </body>
+
 </html>
