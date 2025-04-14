@@ -1,0 +1,53 @@
+/**Selettore di tag*/
+
+/**Per tutti i tag p*/
+p{
+    background-color: yellow;
+    color:darkblue;
+}
+
+/**Solo per un tag con questo id*/
+/**Prevale l'id sugli altri selettori*/
+#infoClasse{
+    background-color: brown; 
+    color:aliceblue
+}
+
+/**Per tutti i tag che hanno quaesta classe*/
+/**La classe prevale sul tag */
+.classTestCSS{
+    background-color: aqua;
+    color: blueviolet;
+}
+
+/**Tag di blocco: Il background prende tutta la finestra e vanno a capo
+Tag in line: Il background occupa solo lo spazio per scrivere e non va a capo*/
+/**Per tutti i tag span */
+span{
+    background-color: blueviolet;
+}
+
+h1 span{
+    background-color: green;
+}
+
+h1 span span{
+    background-color: chocolate;
+}
+
+div{
+    border: 4px solid;
+    border-color: black;
+    padding: 30px;
+    margin: 50px;
+    text-align: center;
+}
+
+#boxModelID{
+    border: 30px;
+    color: aquamarine;
+    border-color: black;
+    padding: 4px;
+    margin: 25px;
+}
+
