@@ -20,7 +20,7 @@ p{
     color: blueviolet;
 }
 
-/**Tag di blocco: Il background prende tutta la finestra e vanno a capo
+/**Tag di blocco: Il background prende tutta la finestra e va a capo
 Tag in line: Il background occupa solo lo spazio per scrivere e non va a capo*/
 /**Per tutti i tag span */
 span{
