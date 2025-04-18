@@ -152,7 +152,7 @@ nav ul li a:hover {
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    transition: background 0.3s;
+    transition: background 0.3s; 
 }
 
 .card-button:hover {
@@ -223,7 +223,7 @@ footer {
     color: #ff6b6b;
 }
 
-/* Responsive Design */
+/**adatta l'aspetto del sito web quando la larghezza dello schermo è 768px o meno, quindi su tablet o smartphone.*/
 @media (max-width: 768px) {
     header {
         flex-direction: column;
