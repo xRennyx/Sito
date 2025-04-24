@@ -1,0 +1,62 @@
+.header{
+    display: flex;
+    justify-content:left;
+    background-color: cyan;
+    padding: 20px;
+}
+
+a{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+
+a:link{
+    color: black;
+}
+
+a:visited{
+    color:blue;
+}
+
+a:hover{
+    color: white;
+}
+
+a:active{
+    color: cornflowerblue;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    background-origin: cyan;
+    padding: 20px;
+}
+
+.wrapper{
+    border: 2px,black solid;
+    min-height: 96vh;  /*Prende tutto lo schermo vh = viewport (Schermo) height **/
+    margin: 1vh 1vw 1vh 1vw;  /* vw = viewport width**/
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    border: 2px,red solid;
+    flex: 1;
+    display: flex;
+}
+
+.left{
+    flex: 2;
+    border: 2px purple solid;
+    background-color: gold;
+}
+
+.right{
+    flex: 1;
+    border: 2px blue solid;
+    background-color: grey;
+}
