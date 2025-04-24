@@ -1,1 +1,1 @@
-Gruppo formato da Francesco Renesto, Dessant Mustafaj e Giacomo Redi
+Gruppo formato da Francesco Renesto (xRennyx), Dessant Mustafaj e Giacomo Redi
