@@ -95,7 +95,7 @@ const persona={
     eta: 5,
     studente: false,
     saluta: function(num){
-        console.log(`Ciao sono $(this.nome) e il mio num preferito è $(num)`);
+        console.log(`Ciao sono ${this.nome} e il mio num preferito è ${num}`);
     }
 };
 
