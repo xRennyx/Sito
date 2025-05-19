@@ -566,14 +566,11 @@ footer {
 }
 
 
-/* ANIMAZIONI & TRANSIZIONI - Music Hub */
-
-/* 1. Transizioni di base per interazioni utente */
+/* ANIMAZIONI & TRANSIZIONI */
 a, button, .card, .card-button {
     transition: all 0.3s ease-in-out;
 }
 
-/* 2. Animazioni per la hero section */
 .hero-content {
     animation: fadeInUp 0.8s ease-out both;
 }
@@ -589,13 +586,11 @@ a, button, .card, .card-button {
     }
 }
 
-/* 3. Effetto hover per le card */
 .card:hover {
     transform: translateY(-10px) scale(1.02);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
-/* 4. Animazione di caricamento per le immagini */
 .card img {
     opacity: 0;
     transform: scale(0.95);
@@ -610,7 +605,6 @@ a, button, .card, .card-button {
     }
 }
 
-/* 5. Animazione per le news articles */
 .news-articles article {
     opacity: 0;
     transform: translateY(20px);
@@ -621,13 +615,11 @@ a, button, .card, .card-button {
 .news-articles article:nth-child(2) { animation-delay: 0.3s; }
 .news-articles article:nth-child(3) { animation-delay: 0.5s; }
 
-/* 6. Effetto pulsanti */
 .card-button:hover {
     transform: translateY(-3px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* 7. Animazione per la pagina artisti */
 .artist-hero .hero-content {
     animation: fadeInHero 1s cubic-bezier(0.2, 0.9, 0.4, 1) both;
 }
@@ -643,7 +635,6 @@ a, button, .card, .card-button {
     }
 }
 
-/* 8. Animazione elementi discografia */
 .album-card {
     opacity: 0;
     transform: perspective(1000px) rotateX(-15deg);
@@ -661,7 +652,6 @@ a, button, .card, .card-button {
     }
 }
 
-/* 9. Animazione lista brani */
 .song {
     opacity: 0;
     transform: translateX(-20px);
@@ -680,7 +670,6 @@ a, button, .card, .card-button {
     }
 }
 
-/* 10. Effetto hover video */
 .video-card:hover .video-thumbnail img {
     transform: scale(1.05);
 }
@@ -689,7 +678,6 @@ a, button, .card, .card-button {
     transition: transform 0.5s cubic-bezier(0.2, 0.9, 0.4, 1);
 }
 
-/* 11. Animazione footer */
 footer {
     opacity: 0;
     animation: fadeIn 0.8s ease-out 0.5s forwards;
@@ -701,7 +689,6 @@ footer {
     }
 }
 
-/* 12. Pulsanti social */
 .social-links a {
     transition: all 0.3s;
     display: inline-block;
@@ -711,7 +698,6 @@ footer {
     transform: translateY(-3px) scale(1.1);
 }
 
-/* 13. Animazione di caricamento (per API) */
 @keyframes pulse {
     0%, 100% { opacity: 0.6; }
     50% { opacity: 1; }
@@ -721,12 +707,10 @@ footer {
     animation: pulse 1.5s ease-in-out infinite;
 }
 
-/* 14. Micro-interazioni per feedback utente */
 button:active {
     transform: scale(0.96);
 }
 
-/* 15. Transizione per dark/light mode (se implementato) */
 body {
     transition: background-color 0.3s, color 0.3s;
 }
