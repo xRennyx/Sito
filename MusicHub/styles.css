@@ -703,42 +703,60 @@ footer {
     50% { opacity: 1; }
 }
 
+/* Effetto di “apparizione” per elementi con classe .loading  */
 .loading {
+    /* Usa l’animazione definita altrove chiamata “pulse”
+       con durata di 1.5 s, easing “ease-in-out” e ripetizione infinita */
     animation: pulse 1.5s ease-in-out infinite;
 }
 
+/* Feedback visivo quando si preme un <button>                */
 button:active {
+    /* Riduce leggermente la scala del pulsante al click
+       per dare l’impressione di “premuto”                     */
     transform: scale(0.96);
 }
 
+/* Transizione dolce su colore di sfondo e testo del <body>   */
 body {
+    /* Ogni cambiamento a background-color o color impiega
+       0.3 s con interpolazione predefinita                    */
     transition: background-color 0.3s, color 0.3s;
 }
+
+/* Spiegazione extra mostrata solo in hover sui paragrafi     */
 .ep-explanation {
+    /* Invisibile di default                                   */
     display: none;
-    font-size: 0.8em;
-    color: #666;
+    font-size: 0.8em;         /* Più piccola del testo normale */
+    color: #666;              /* Grigio tenue                  */
 }
 
+/* All’interno di un <p>, quando l’utente fa hover, mostra
+   l’elemento con classe .ep-explanation                      */
 p:hover .ep-explanation {
     display: inline;
 }
 
-
+/* Tooltip generico per carte album (o altri elementi)        */
 .ep-tooltip {
-    position: absolute;
-    background-color: #333;
-    color: white;
-    padding: 8px;
-    border-radius: 4px;
-    font-size: 14px;
-    z-index: 100;
-    display: none;
-    width: 200px;
+    position: absolute;       /* Si posiziona rispetto al parent */
+    background-color: #333;   /* Sfondo scuro                   */
+    color: white;             /* Testo bianco                   */
+    padding: 8px;             /* Spaziatura interna             */
+    border-radius: 4px;       /* Angoli arrotondati             */
+    font-size: 14px;          /* Dimensione testo               */
+    z-index: 100;             /* Sopra altri elementi           */
+    display: none;            /* Nascosto di default            */
+    width: 200px;             /* Larghezza fissa                */
+    /* Leggera ombra per profondità                            */
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    /* Fade in/out morbido                                     */
     transition: opacity 0.3s;
 }
 
+/* Mostra il tooltip quando l’utente passa sopra una
+   .album-card (o elemento simile)                            */
 .album-card:hover .ep-tooltip {
     display: block;
 }
