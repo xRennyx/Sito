@@ -1,28 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="myStyle.css">
-    <title>SitoProva</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SitoProva</title>
+  <link rel="stylesheet" href="myStyle.css">
 </head>
 <body>
-    <h1> <span>Benvenuto nel mio sito</span></h1>
-    <h2>Questo è un paragrafo di prova</h2>
-    <p2>Questo è un secondo paragrafo di prova</p2>
-    <div id="boxModelID">Questo è un box model</div>
-  <form>
-  <label for="fname">Nome</label>
-  <input type="text" id="fname" name="fname">
-  <label for="lname">Cognome</label>
-  <input type="text" id="lname" name="lname">
-</form>
-<form>
-<h2>Seleziona il tuo paese:</h2>
-  <select id="country" name="country">
-  <option value="au">Italia</option>
-  <option value="ca">Germania</option>
-  <option value="usa">Francia</option>
-  </select>
-</form>
-</body>
+  <h1><span>Benvenuto nel mio sito</span></h1>
+  <h2>Questo è un paragrafo di prova</h2>
+
+  <p>Questo è un paragrafo corretto.</p>
+  <p>Questo è un secondo paragrafo di prova.</p>
+
+  <div id="boxModelID">Questo è un box model</div>
+
+  <hr>
+
+  <form action="#" method="post">
+    <h2>Dati personali</h2>
+
+    <label for="fname">Nome:</label><br>
+    <input type="text" id="fname" name="fname" placeholder="Inserisci il tuo nome"><br><br>
+
+    <label for="lname">Cognome:</label><br>
+    <input type="text" id="lname" name="lname" placeholder="Inserisci il tuo cognome"><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Inserisci la tua email"><br><br>
+
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password"><br><br>
+  </form>
+
+  <hr>
+
+  <form action="#" method="post">
+    <h2>Seleziona il tuo paese</h2>
+    <select id="country" name="country">
+      <option value="it">Italia</option>
+      <option value="de">Germania</option>
+      <option value="fr">Francia</option>
+      <option value="es">Spagna</option>
+    </select><br><br>
+
+    <h3>Genere:</h3>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Maschio</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Femmina</label><br>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Altro</label><br><br>
+
+    <h3>Interessi:</h3>
+    <input type="checkbox" id="sport" name="interest" value="sport">
+    <label for="sport">Sport</label><br>
+    <input type="checkbox" id="music" name="interest" value="music">
+    <label for="music">Musica</label><br>
+    <input type="checkbox" id="tech" name="interest" value="tech">
+    <label for="tech">Tecnologia</label><br><br>
+
+    <label for="message">Lascia un messaggio:</label><br>
+    <textarea id="message" name="message" rows="5" cols="30" placeholder="Scrivi qui..."></textarea><br><br>
+
+    <button type="submit">Invia</button>
+    <button type="reset">Reset</button>
+  </form>
