@@ -1,0 +1,23 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.5dvh;
+    background-color: lightskyblue;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+#grid
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: lightgray;
+}
+.box
+{
+    width: 30vh;
+    height: 30vh;
+    padding: 20px;
+    border: 5px solid black;
+}
